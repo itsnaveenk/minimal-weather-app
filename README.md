@@ -4,4 +4,4 @@ demo:
 
 ![Landing Page](<./readme-resourses/landing-page.png>)
 
-![Weather Details](./readme-resourses/weather-demo.png)
+![Weather Details](./readme-resourses/weather-detail-demo.png)
