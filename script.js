@@ -35,12 +35,12 @@ async function checkWeather(city){
     weather_body.style.display = "flex";
     not_found.style.display = "none";
     }
-    temp.innerHTML=`${Math.round(weather_data.main.temp - 273.15)}`;
+    temp.innerHTML=`${Math.round(weather_data.main.temp - 273.15)}°C`;
     desc.innerHTML=`${weather_data.weather[0].description}`;
     humidity.innerHTML=`${weather_data.main.humidity}%`;
     wind.innerHTML=`${weather_data.wind.speed}Km/H`;
     city_name.innerHTML=`${weather_data.name},${weather_data.sys.country}`;
-    feels_like.innerHTML=`${Math.round(weather_data.main.feels_like - 273.15)}`;
+    feels_like.innerHTML=`${Math.round(weather_data.main.feels_like - 273.15)}°C`;
     pressure.innerHTML=`${weather_data.main.pressure}hPa`;
     
     const icon = `${weather_data.weather[0]['icon']}`;
