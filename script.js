@@ -7,6 +7,9 @@ const temp = document.querySelector('.temp');
 const desc = document.querySelector('.desc');
 const humidity = document.getElementById('humidity');
 const wind = document.getElementById('wind-speed');
+const city_name= document.querySelector('.city-name');
+const feels_like= document.getElementById('feels-like');
+const pressure= document.getElementById('pressure');
 
 const not_found = document.querySelector('.notfound');
 
@@ -25,7 +28,7 @@ async function checkWeather(city){
     if(weather_data.cod === '404'){
         not_found.style.display = "flex";
         weather_body.style.display = "none";
-        console.log("Invalid, Please enter city name corrently");
+        console.log("Invalid, Please enter city name correctly");
         
         return;
     }else{
@@ -36,6 +39,9 @@ async function checkWeather(city){
     desc.innerHTML=`${weather_data.weather[0].description}`;
     humidity.innerHTML=`${weather_data.main.humidity}%`;
     wind.innerHTML=`${weather_data.wind.speed}Km/H`;
+    city_name.innerHTML=`${weather_data.name},${weather_data.sys.country}`;
+    feels_like.innerHTML=`${Math.round(weather_data.main.feels_like - 273.15)}`;
+    pressure.innerHTML=`${weather_data.main.pressure}hPa`;
     
     const icon = `${weather_data.weather[0]['icon']}`;
     weather_img.src = `./img/${icon}.svg`.replace('$%7Bicon%7D', icon);    

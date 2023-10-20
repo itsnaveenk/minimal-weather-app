@@ -97,6 +97,11 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
+.weather-box .city-name{
+    font-size: 24px;
+    font-weight: bolder;
+
+}
 
 .weather-details{
     width: 100%;
@@ -109,11 +114,21 @@ body{
     display: flex;
     align-items: center;
 }
+.pressure, .feels-like{
+    display: flex;
+    align-items: center;
+}
 
 .humidity{
     margin-left: 20px;
 }
+.feels-like{
+    margin-left: 20px;
+}
 .wind{
+    margin-right: 20px;
+}
+.pressure{
     margin-right: 20px;
 }
 

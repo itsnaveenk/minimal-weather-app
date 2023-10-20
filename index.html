@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -16,9 +18,9 @@
                 <button class="fa-solid fa-magnifying-glass" id="searchbtn"></button>
 
             </div>
-            
+
         </div>
-        
+
         <div class="notfound">
             <h1>Location not found. Please enter correct city name</h1>
             <img src="./img/error-img.png" alt="location not found.">
@@ -30,8 +32,27 @@
             <div class="weather-box">
                 <p class="temp">0<sup>°C</sup></p>
                 <p class="desc">Unknown</p>
+                <p class="city-name"></p>
             </div>
 
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="feels-like">00</span>
+                        <p>feels-like</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="pressure">00</span>
+                        <p>pressure</p>
+                    </div>
+                </div>
+
+            </div>
             <div class="weather-details">
                 <div class="humidity">
                     <i class="fa-solid fa-droplet"></i>
@@ -47,7 +68,7 @@
                         <p>wind</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -55,4 +76,5 @@
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/f700ad15b4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
