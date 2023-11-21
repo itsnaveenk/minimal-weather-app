@@ -113,13 +113,12 @@ body {
 
   align-items: center;
 }
-.pressure,
-.feels-like {
+.pressure, .feels-like {
   display: flex;
   align-items: center;
 }
 
-/* .humidity {
+.humidity {
   margin-left: 20px;
 }
 .feels-like {
@@ -130,7 +129,7 @@ body {
 }
 .pressure {
   margin-right: 20px;
-} */
+}
 
 .weather-details i {
   font-size: 40px;
@@ -139,7 +138,7 @@ body {
 
 .weather-details .text {
   font-size: 16px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .text span {
